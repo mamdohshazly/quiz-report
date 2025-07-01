@@ -670,9 +670,8 @@
         });
 
         // 5. Apply default theme on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            const defaultTheme = generateDarkTheme('#1a2a6c');
-            applyTheme(defaultTheme);
+        const correctOption = q.options.find(opt => opt.correct);
+const correctText = correctOption ? correctOption.text.substring(3) : 'N/A';
         });
     </script>
 </body>
